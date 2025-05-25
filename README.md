@@ -1,5 +1,9 @@
 # sandbox-world
 
+Copyright 2025, jaggz.h {who is at} gmail.com. (But see LICENSE which is currently GPL).
+
+## WARNING: This is the very first *untested* version.
+
 A simple, secure, and flexible way to run Python (or other) projects in a sandboxed Docker environment, using overlays and path mappings to keep your host system clean and safe.
 
 ## Features
