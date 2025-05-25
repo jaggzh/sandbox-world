@@ -40,7 +40,7 @@ A simple, secure, and flexible way to run Python (or other) projects in a sandbo
 
 ## Full Usage:
 
-### Usage: `sandboxed-py [OPTIONS] --cmd ... [args...]`
+### Usage: `sandbox-world [OPTIONS] --cmd ... [args...]`
 
 Securely run your Python (or other) project inside a sandboxed Docker container, using overlays and explicit path mappings for controlled access to your host system.
 
@@ -115,10 +115,10 @@ Securely run your Python (or other) project inside a sandboxed Docker container,
 
 ### Examples:
   # Run a project with venv overlay, exposing output/ as writable, and Gradio port 7860
-  `./sandboxed-py --prjdir ./myproj --path output/:output-exposed/ --overlay-venv --port 7860:7860 --cmd python3 main.py`
+  `./sandbox-world --prjdir ./myproj --path output/:output-exposed/ --overlay-venv --port 7860:7860 --cmd python3 main.py`
 
   # Share a data directory as read-only, and run a custom shell script
-  `./sandboxed-py --prjdir ./myproj --ro-path /mnt/datasets:/prj/data --cmd bash run-experiment.sh`
+  `./sandbox-world --prjdir ./myproj --ro-path /mnt/datasets:/prj/data --cmd bash run-experiment.sh`
 
   # Clean up all sandbox artifacts:
   `rm -rf ./myproj/sandbox-overlay/`
