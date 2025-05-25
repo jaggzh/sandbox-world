@@ -4,7 +4,7 @@ Copyright 2025, jaggz.h {who is at} gmail.com. (But see LICENSE which is current
 
 ## WARNING: This is the very first *untested* version.
 
-A simple, secure, and flexible way to run Python (or other) projects in a sandboxed Docker environment, using overlays, so existing libs can be re-used without HUGE containers, while maintaining 'safety'.
+A simple, secure, and flexible way to run Python (or other) projects in a sandboxed Docker environment, using overlays, so existing libs can be re-used without HUGE containers, while maintaining some semblance of 'safety'.
 
  - The project can write to the overlays (for when they need to update things).
  - The project can access exposed path mappings (handled by Docker)
