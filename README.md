@@ -15,7 +15,7 @@ A simple, secure, and flexible way to run Python (or other) projects in a sandbo
 - **Overlay directories**: Temporary overlays for venvs, uv stores, etc. stored in `sandbox-overlay/` inside your project
 - **Custom path mapping**: Expose host directories (for reading/writing) into the sandbox as you wish
 - **Port exposing**: Map container ports for web apps or APIs (Gradio, Jupyter, etc.)
-- **No outbound network by default**: (You may use your own firewall for this)
+- **No outbound network by default**: (You may use your own firewall for this) **(I don't even know what this means. LLM said this. At present I didn't want to handle outbound network monitoring for the first version, relying on your own firewalling/network monitoring for it.)**
 - **Reproducibility**: Generates a `sandbox-setup.sh` script to easily rerun the sandbox with the same options
 - **Minimal base image**: Lightweight and efficient; you can swap to your preferred image
 
